@@ -8,7 +8,7 @@ config_dir = user_config_dir('ntfy', 'dschep')
 config_file = path.join(config_dir, 'telegram.ini')
 
 
-def notify(title, message, parse_mode="text", retcode=None):
+def notify(title, message, parse_mode="markdown", retcode=None):
     """
     Sends message over Telegram using telegram-send, title is ignored.
 
